@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <title>Happy Birthday</title>
+</head>
+<body>
+    <div id="floating-container"></div>
+    <div class="passcode">
+        <form class="card-passcode">
+            <h2>Countdown to the Big Day</h2>
+            <div class="countdown-container">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+                 <div class="time-box">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+               </div>
+                <div class="time-box">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+               </div>
+            </div>
+            <h3>Are You Ready?</h3>
+            <label for="pass">Enter Password</label>
+            <input id="pass" type="password" name="password" placeholder="Enter Password">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <div class="hero-section">
+        <h1>Happy Birthday Merna</h1>
+        <span>Day: 9/17/2005</span>
+        <p>ON THIS DAY <br>
+        A Beautiful Soul Was Born<i class="fa-solid fa-heart"></i><br>
+        May your life always be filled with beautiful <br>
+        moments, endless smiles, and everything <br>
+        your heart wishes for<i class="fa-solid fa-ribbon"></i></p>
+        <audio src="birthday.mp3"></audio>
+    </div>
+    <div class="cake-section">
+        <div class="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="candle" id="candle" onclick="extinguishCandle()">
+            <div class="flame" id="flame"></div>
+        </div>
+        </div>
+        <p class="cake-instruction" id="cake-status">Press the candle<i class="fa-solid fa-fire-flame-curved"></i></p>
+    </div>
+    <div class="wish-cards">
+        <div class="card card-1">
+            <h4>A Kind Heart <i class="fa-solid fa-heart"></i></h4>
+            <p>Happy Birthday to one of the Kindest souls <br>
+            Your positive energy and warmth always <br>
+            bring so much joy to everyone around you.</p>
+        </div>
+        <div class="card card-2">
+            <h4>A Birthday Wish <i class="fa-solid fa-wand-magic-sparkles"></i></h4>
+            <p>Wishing you a bright new year filled with <br>
+            peace of mind, happiness, and success in <br>
+            every single step you take toward your dreams.</p>
+        </div>
+        <div class="card card-3">
+            <h4>Special Birthday Voucher <i class="fa-solid fa-gift"></i></h4>
+            <p>This voucher entitles you to a treat with your <br>
+            favorite drink and a fun day out of your <br>
+            choice, whenever you decide.</p>
+        </div>
+        <div class="card card-4">
+            <h4>New Beginnings <i class="fa-solid fa-rocket"></i></h4>
+            <p>A brand new year full of fresh opportunities <br>
+            and even biggre achievements. keep believing <br>
+            in yourself and keep shining. Happy Birthday</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
